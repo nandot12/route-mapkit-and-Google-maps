@@ -13,9 +13,12 @@
 		2DE63F59212D7FE400D8FD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63F57212D7FE400D8FD0B /* Main.storyboard */; };
 		2DE63F5B212D7FE900D8FD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63F5A212D7FE900D8FD0B /* Assets.xcassets */; };
 		2DE63F5E212D7FE900D8FD0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63F5C212D7FE900D8FD0B /* LaunchScreen.storyboard */; };
+		96881776AEA6159C5560C267 /* Pods_Map_route_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC2A6ECBD4C95E21D9DF197 /* Pods_Map_route_sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C49A114DEDECB4D866C914F /* Pods-Map route sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map route sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample.release.xcconfig"; sourceTree = "<group>"; };
+		241AAF7BB6491E89A095841B /* Pods-Map route sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map route sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample.debug.xcconfig"; sourceTree = "<group>"; };
 		2DE63F4E212D7FE400D8FD0B /* Map route sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map route sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE63F51212D7FE400D8FD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DE63F53212D7FE400D8FD0B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		2DE63F5A212D7FE900D8FD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DE63F5D212D7FE900D8FD0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DE63F5F212D7FE900D8FD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC2A6ECBD4C95E21D9DF197 /* Pods_Map_route_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Map_route_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96881776AEA6159C5560C267 /* Pods_Map_route_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2DE63F50212D7FE400D8FD0B /* Map route sample */,
 				2DE63F4F212D7FE400D8FD0B /* Products */,
+				B760C70E1F508C97EC7020D9 /* Pods */,
+				C8617D4F9FB5625E21DC668E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "Map route sample";
 			sourceTree = "<group>";
 		};
+		B760C70E1F508C97EC7020D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				241AAF7BB6491E89A095841B /* Pods-Map route sample.debug.xcconfig */,
+				1C49A114DEDECB4D866C914F /* Pods-Map route sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8617D4F9FB5625E21DC668E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2A6ECBD4C95E21D9DF197 /* Pods_Map_route_sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DE63F62212D7FE900D8FD0B /* Build configuration list for PBXNativeTarget "Map route sample" */;
 			buildPhases = (
+				68B42F8000CF7E995A9CEED3 /* [CP] Check Pods Manifest.lock */,
 				2DE63F4A212D7FE400D8FD0B /* Sources */,
 				2DE63F4B212D7FE400D8FD0B /* Frameworks */,
 				2DE63F4C212D7FE400D8FD0B /* Resources */,
+				C372CD79E5B5F108447679E9 /* [CP] Copy Pods Resources */,
+				CD78C30888E9EDFEB3E8AE65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68B42F8000CF7E995A9CEED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Map route sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C372CD79E5B5F108447679E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD78C30888E9EDFEB3E8AE65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Map route sample/Pods-Map route sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DE63F4A212D7FE400D8FD0B /* Sources */ = {
@@ -282,9 +370,11 @@
 		};
 		2DE63F63212D7FE900D8FD0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241AAF7BB6491E89A095841B /* Pods-Map route sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN236W67X5;
 				INFOPLIST_FILE = "Map route sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +389,11 @@
 		};
 		2DE63F64212D7FE900D8FD0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C49A114DEDECB4D866C914F /* Pods-Map route sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QN236W67X5;
 				INFOPLIST_FILE = "Map route sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
